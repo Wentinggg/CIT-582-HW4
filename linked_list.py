@@ -46,4 +46,4 @@ def next_block(last_block):
 # take an existing chain “block_list” and append five blocks to it
 def app_five(block_list):
     for i in range(5):
-        M4BlockChain.append(next_block(block_list[len(block_list) - 1]))
+        block_list.append(next_block(block_list[len(block_list) - 1]))
