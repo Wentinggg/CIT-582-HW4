@@ -37,7 +37,7 @@ the timestamp should be the current time,
 and the content should be string “this is block i” where i is the index of the block.
 '''
 def next_block(last_block):
-    index = len(M4BlockChain)
+    index = last_block.index + 1
     content = "this is block " + str(index)
     return Block(index, datetime.now(), content, last_block.hash)
 
