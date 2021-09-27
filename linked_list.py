@@ -44,5 +44,7 @@ def next_block(last_block):
 
 # append 5 blocks to the blockchain
 def app_five(block_list):
-    for i in range(5):
+    i = 0
+    while i < 5:
         M4BlockChain.append(next_block(M4BlockChain[len(M4BlockChain) - 1]))
+        i += 1
